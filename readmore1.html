@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .mainh1{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            margin: 0px auto;
+        }
+        h1{
+            background-color:aquamarine ;
+            color: coral;
+        }
+        .navbar{
+            /* position: fixed;
+            top: 0px;
+            left: 0; */
+            width: 100%;
+            background-color:aliceblue;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .menu-icon{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li{
+            margin-left: 8%;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            font-size: 130%;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+        .box{
+            /* border: 2px solid black; */
+            /* height: 45vh; */
+            margin:3.5% 1%;
+            display: flex;
+            flex-wrap: wrap;
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+            /* padding: 2.5%; */
+            /* box-shadow: 20px 20px 20px rgb(188, 172, 172); */
+        }
+        .box img{
+           float: right;
+           /* width: auto; */
+            /* height: 43vh; */
+        }
+        .box p{
+         font-size: 130%;  
+        }
+        ol{
+            padding: 2%;
+        }
+        ol .nam{
+            font-size: 130%;
+        }
+        footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex-basis: 60%;
+}
+
+.footer-right {
+    flex-basis: 30%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
+
+.footer-bottom {
+    background-color:aliceblue;
+    padding: 10px 0;
+}
+        @media(max-width: 768px){
+            .navbar .menu-icon{
+                display: block;
+
+            }
+
+            .navbar ul{
+                display: none;
+                background-color:#7ccfe8;
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                /* background-color: #fff; */
+                padding: 10px;
+                z-index: 100;
+            }
+            ol{
+            padding: 6%;
+        }
+            .navbar ul.show{
+                display: flex;
+            }
+
+            .navbar ul li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .intimg{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">Business Guide</a>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services1.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="kamal.html" class="sign">Sign In</a></li>
+                 <li><a href="kamal3.html" class="sign-2">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainh1"><h1>Product Diversification and Global Expansion - Tata Group:</h1></div>
+    <div class="container">
+        <div class="box">
+    <p>  <img src="https://plus.unsplash.com/premium_photo-1670213989190-8b29055d8134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGZpbmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  class="intimg" alt="he"> The Tata Group, a diversified conglomerate with a wide range of businesses, has adopted a strategy of product diversification and global expansion. Over the years, Tata has expanded its operations beyond India and ventured into various industries such as automotive, steel, information technology, and hospitality. Their global presence and diversified portfolio have allowed them to withstand economic fluctuations and tap into new markets, making them one of India's most influential and respected business conglomerates
+        me other scholars acknowledged the risk and failure associated with internationalisation and discussed possible drawbacks to the success of internationalisation (Jones and Hill, 1988;Lu and Beamish, 2004). Some others attempted to find out optimal degree of internationalisation or potential moderator of internationalisation-performance relationship (Chang and Wang, 2007;Kumar et al., 2012;Singh et al., 2010). All these studies are at firm level, hence there is a need to check if the same arguments can be extended to business group level.Several studies have investigated the potential interaction effect of product diversification and internationalisation and the effect of such interactions on firm performance Contractor, 2012, 2014;Oh et al., 2015. Business groups operate with high level of product diversification as a result of entering into multiple industries (Kumar et al., 2012) and hence understanding the effect of product diversification is necessary for emerging market business groups.Key Elements of Tata Group's Strategy:
+        <ol type="a">
+        <li class="nam">Diversification: Tata Group has strategically diversified its portfolio across multiple industries. This diversification allows them to reduce risk exposure to a single market or industry. By operating in different sectors, Tata can leverage the synergies among its various businesses and mitigate the impact of economic fluctuations in any one sector.</li>
+        
+        <li class="nam">Global Expansion: Tata has a strong global presence with operations and businesses in various countries across continents. They have made significant investments and acquisitions to expand internationally, gaining access to new markets and customer segments. This global expansion has helped Tata tap into the growing demand for its products and services worldwide.</li> 
+        
+        <li class="nam"> Innovation and Social Responsibility: Tata is known for its focus on innovation and social responsibility. They invest in research and development to create innovative products and technologies, staying ahead of competitors. Additionally, Tata Group is actively involved in various philanthropic activities and corporate social responsibility (CSR) initiatives, contributing to the welfare of society.</li></ol> </p></div>
+</div >
+    <footer>
+        <!-- <div class="footer-container">
+            <div class="footer-left">
+                <h4>Contact Information</h4>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Business St, City, Country</p>
+            </div>
+            <div class="footer-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="twitter-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="instagram-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Business Guide. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Add JavaScript code to toggle the menu on click
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

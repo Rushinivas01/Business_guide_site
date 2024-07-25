@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .mprop{
+            display: flex;
+            flex-direction: column;
+        }
+        .mpho{
+            border: 2px solid black;
+            margin: 0.5% auto;
+        }
+        .mpho img{
+            display: block;
+            margin: auto;
+            width: 20vw;
+            border-radius: 50%;
+        }
+        .mpho h1{
+            text-align: center;
+        }
+        .navbar{
+            /* position: fixed;
+            top: 0px;
+            left: 0; */
+            width: 100%;
+            background-color:aliceblue;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .menu-icon{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li{
+            margin-left: 8%;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            font-size: 130%;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+        footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex-basis: 60%;
+}
+
+.footer-right {
+    flex-basis: 30%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
+
+.footer-bottom {
+    background-color:aliceblue;
+    padding: 10px 0;
+}
+        @media(max-width: 768px){
+            .navbar .menu-icon{
+                display: block;
+
+            }
+
+            .navbar ul{
+                display: none;
+                background-color:#7ccfe8;
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                /* background-color: #fff; */
+                padding: 10px;
+                z-index: 100;
+            }
+         
+            .navbar ul.show{
+                display: flex;
+            }
+
+            .navbar ul li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .intimg{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">Business Guide</a>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services1.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="kamal.html" class="sign">Sign In</a></li>
+                 <li><a href="kamal3.html" class="sign-2">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mprop">
+        <div class="mpho">
+            <img src="https://th.bing.com/th/id/OIP.PWlhSLSM1VmXw0wbQi4N7AHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <h1>Vipul</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente accusamus autem cumque quod reprehenderit dolore voluptatum? Officia deleniti, explicabo blanditiis, accusamus, animi ex neque ducimus dicta quia nam officiis earum alias odio. Fugiat ipsum veritatis laborum aliquid facere eligendi maiores? Voluptates explicabo adipisci iure delectus neque ad, ipsam itaque incidunt. Obcaecati quidem officia accusantium aut modi, deserunt ut praesentium saepe deleniti facilis veritatis, minus et ipsum perferendis aliquam porro facere dicta dignissimos ex? Provident asperiores necessitatibus facere, ut itaque ipsum recusandae unde error suscipit quam doloremque saepe quas. Magni fugiat qui earum voluptatum, pariatur quo voluptate quae! Placeat, voluptas?</p>
+        </div>
+        <div class="mpho">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97ZJnFL8xnPQVMuPDkWiLMlsBKOWDpHMq7w&usqp=CAU" alt="">
+
+            <h1>Ayush</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente accusamus autem cumque quod reprehenderit dolore voluptatum? Officia deleniti, explicabo blanditiis, accusamus, animi ex neque ducimus dicta quia nam officiis earum alias odio. Fugiat ipsum veritatis laborum aliquid facere eligendi maiores? Voluptates explicabo adipisci iure delectus neque ad, ipsam itaque incidunt. Obcaecati quidem officia accusantium aut modi, deserunt ut praesentium saepe deleniti facilis veritatis, minus et ipsum perferendis aliquam porro facere dicta dignissimos ex? Provident asperiores necessitatibus facere, ut itaque ipsum recusandae unde error suscipit quam doloremque saepe quas. Magni fugiat qui earum voluptatum, pariatur quo voluptate quae! Placeat, voluptas?</p>
+        </div>
+        <div class="mpho">
+            <img src="https://th.bing.com/th/id/OIP.jiOq7perhtiuSQLsK6C8bwHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <h1>Rushinivas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente accusamus autem cumque quod reprehenderit dolore voluptatum? Officia deleniti, explicabo blanditiis, accusamus, animi ex neque ducimus dicta quia nam officiis earum alias odio. Fugiat ipsum veritatis laborum aliquid facere eligendi maiores? Voluptates explicabo adipisci iure delectus neque ad, ipsam itaque incidunt. Obcaecati quidem officia accusantium aut modi, deserunt ut praesentium saepe deleniti facilis veritatis, minus et ipsum perferendis aliquam porro facere dicta dignissimos ex? Provident asperiores necessitatibus facere, ut itaque ipsum recusandae unde error suscipit quam doloremque saepe quas. Magni fugiat qui earum voluptatum, pariatur quo voluptate quae! Placeat, voluptas?</p>
+        </div>
+    </div>
+    <footer>
+        <!-- <div class="footer-container">
+            <div class="footer-left">
+                <h4>Contact Information</h4>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Business St, City, Country</p>
+            </div>
+            <div class="footer-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="twitter-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="instagram-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Business Guide. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+    <script>
+        // Add JavaScript code to toggle the menu on click
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

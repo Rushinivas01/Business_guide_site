@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navbar{
+            /* position: fixed;
+            top: 0px;
+            left: 0; */
+            width: 100%;
+            background-color:aliceblue;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .menu-icon{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li{
+            margin-left: 8%;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            font-size: 130%;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+        /* .intimg{
+            float: right;
+        } */
+       .name_p{
+        display: flex;
+        justify-content: center;
+       }
+       .name_p{
+        font-size: 200%;
+       }
+       .box{
+            /* border: 2px solid black; */
+            /* height: 45vh; */
+            margin:3.5% 1%;
+            display: flex;
+            flex-wrap: wrap;
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+            /* padding: 2.5%; */
+            /* box-shadow: 20px 20px 20px rgb(188, 172, 172); */
+        }
+        .box img{
+           float: right;
+           /* width: auto; */
+            /* height: 43vh; */
+        }
+        .box p{
+         font-size: 130%;  
+        }
+        .table_data{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            margin-bottom: 2%;
+            /* width: 60vw; */
+        }
+        table,th,td{
+           border:2px solid black;
+           border-collapse: collapse;
+           text-align: center;
+        }
+        th,td{
+            font-size: 150%;
+        }
+
+        /* .table_data{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        form {
+            border: 2px solid black;
+            /* width: 85vw; */
+            /* margin: 5% auto; */
+            /* height: 100vh; */
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 2%;
+        }
+
+        h1 {
+            background-color: orange;
+            /* width: 40vw; */
+            margin: 1.5% auto;
+            text-align: center;
+            /* font-size: 1.5rem; */
+
+        }
+        label{
+            font-size: 170%;
+        }
+        input,select{
+            height: 4.5vh;
+            background-color: white;
+        }
+          textarea{
+            background-color: white;
+          }
+        label,
+        input,
+        textarea,select {
+            /* background-color: aliceblue; */
+            width: 60vw;
+            /* height: 3vh; */
+            margin: 0.1% auto;
+            /* background-color: white; */
+        }
+
+        /* input,textarea{
+          width:20vw;
+          margin: 1% auto;
+        } */
+        input[type="submit"] {
+            background-color: coral;
+            border: 2px solid rgb(214, 71, 20);
+            /* width: 10vw; */
+            margin: 1% auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(236, 159, 17);
+            border: 2px solid rgb(48, 22, 12);
+        }
+
+        /* @media only screen and (min-width: 375px) and (max-width:575px) {
+            h1 {
+                width: 18vw;
+            }
+
+            input[type="submit"] {
+
+                width: 13vw;
+
+            }
+            form{
+                width: 75vw;
+            }
+            label,
+        input,
+        textarea,select {
+            background-color: aliceblue;
+            width: 40vw;
+            margin: 0.1% auto;
+        }
+        } */
+
+        /* @media only screen and (min-width: 277px) and (max-width:376px) {
+            h1 {
+                width: 25vw;
+            }
+
+            input[type="submit"] {
+
+                width: 20vw;
+
+            }
+            form{
+                width: 75vw;
+            }
+            label,
+        input,
+        textarea,select {
+
+            background-color: aliceblue;
+            width: 40vw;
+            margin: 0.1% auto;
+        }
+        } */
+
+        /* @media only screen and (max-width:277px) {
+            h1 {
+                width: 28vw;
+            }
+
+            input[type="submit"] {
+
+                width: 23vw;
+
+            }
+            form{
+                width: 75vw;
+            }
+            label,
+        input,
+        textarea,select {
+
+            background-color: aliceblue;
+            width: 40vw;
+            margin: 0.1% auto;
+        }
+        } */
+        footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex-basis: 60%;
+}
+
+.footer-right {
+    flex-basis: 30%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
+
+.footer-bottom {
+    background-color:aliceblue;
+    padding: 10px 0;
+}
+        @media(max-width: 768px){
+            .navbar .menu-icon{
+                display: block;
+
+            }
+
+            .navbar ul{
+                display: none;
+                background-color:#7ccfe8;
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                /* background-color: #fff; */
+                padding: 10px;
+                z-index: 100;
+            }
+         
+            .navbar ul.show{
+                display: flex;
+            }
+
+            .navbar ul li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .intimg{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+        <nav class="navbar">
+            <a href="index.html required" class="logo">Business Guide</a>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services1.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="kamal.html" class="sign">Sign In</a></li>
+                 <li><a href="kamal3.html" class="sign-2">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="name_p"><h1>Raj Kumar</h1></div>
+    <div class="container">
+        <div class="box">
+    <p>  <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?b=1&s=170667a&w=0&k=20&c=lrHSjzuqKIAC76-vpOhzR7pRsP38DGPWt7x7SOFbm0Q="  class="intimg" alt="he"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eos necessitatibus dicta. Ipsum esse obcaecati labore accusamus qui minima laborum repudiandae eum, doloribus nobis necessitatibus ea? Voluptate aspernatur minima quas explicabo dicta aut, quaerat quae laboriosam quod, ducimus eligendi doloremque autem. Libero sunt nesciunt tenetur tempora ducimus, optio eligendi omnis exercitationem incidunt dignissimos! Est soluta laboriosam qui? Porro molestiae sed quo repudiandae voluptatem dolores! Quam natus in placeat autem dignissimos consectetur accusantium at omnis quo culpa minus distinctio nesciunt, earum ad recusandae temporibus blanditiis hic tempora qui corrupti eum, rerum deleniti odit veritatis! Illum magni reiciendis sint autem accusantium est qui architecto nam iure nihil, officiis, excepturi, dolores laboriosam tempora. Illum hic nemo suscipit corporis, odio placeat assumenda. Ab voluptatibus, et magni ipsa minus quae nam ex iste aspernatur voluptatem dolorem quas aliquid sit? Veritatis saepe hic excepturi suscipit nisi minima. Omnis repellat distinctio modi cum. Molestias itaque ab voluptatum quibusdam veritatis at? Natus tenetur at aut minima sint officia est obcaecati beatae, eligendi nemo totam illo deserunt libero fuga earum quasi odio nesciunt. Id nulla sunt nobis maxime! Eaque provident natus ut? Magnam, temporibus. Eum soluta assumenda fugit numquam rem labore veniam ullam nihil obcaecati quas. Optio modi assumenda quam laboriosam eveniet. Consequuntur doloremque quisquam impedit tempora quas fugit eaque culpa perspiciatis eius voluptate aliquam aperiam alias modi repudiandae labore, eum ab officia dicta totam! Quae quidem corrupti quas officia, non eaque aspernatur ad ut explicabo iste sequi recusandae veritatis consectetur. Modi nobis illo rerum distinctio. Cumque, aliquam adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit quae corporis numquam quaerat quod aspernatur possimus porro obcaecati veritatis necessitatibus quasi quisquam hic illo, adipisci fugit! Numquam enim modi odit maxime eaque illo dolor vel asperiores ullam? Expedita quibusdam inventore unde autem ullam quasi accusamus! Deleniti est soluta, molestiae temporibus aliquam saepe sapiente nobis perferendis obcaecati. Amet voluptate veritatis eaque reprehenderit et reiciendis aspernatur molestiae enim dolorum beatae voluptatum alias itaque, labore quidem sit maxime ab? Facere quos ullam natus earum magni distinctio adipisci nisi quaerat eos voluptatem expedita quisquam repellat, et quo nesciunt maiores recusandae enim. Fuga ipsam deleniti labore sed blanditiis, accusamus nihil voluptate illo, expedita amet magni recusandae quis provident odio veritatis possimus. Eum, facere ad vitae obcaecati minus tempora sint id aperiam enim ab officia praesentium nemo quia eaque totam dolor sequi vel aliquid, ea perspiciatis? Suscipit, quisquam inventore eius fugiat nemo sapiente soluta optio ad est tempora voluptas eligendi asperiores similique voluptate mollitia? Quasi sapiente neque ipsum quibusdam magni molestias ea facere ab eius cum culpa voluptates dolores corporis et quos commodi, provident accusamus fuga? Saepe quidem iure beatae aspernatur ratione repellendus fugit cum quo iusto vel nesciunt eum totam natus, veniam eveniet nam odit, in eos itaque accusantium unde hic dolorum maiores odio! Ab veritatis pariatur voluptate sapiente dolore eum, temporibus excepturi architecto quos blanditiis officiis accusamus facere itaque quae fuga cupiditate numquam, similique ut saepe nobis nihil libero. At architecto ipsum commodi sit vitae facilis excepturi quasi ab voluptatibus iste minima, doloremque laboriosam? Necessitatibus, tempora possimus? Nihil alias quos doloribus ea labore reprehenderit magnam dicta nulla, et nostrum modi itaque consequatur animi accusantium consectetur inventore expedita enim eum, dignissimos excepturi? Incidunt dolores iste, exercitationem, suscipit vitae unde cum aut omnis explicabo nisi numquam qui porro sequi debitis veritatis voluptatum fugit vel optio quisquam quod maiores hic rerum dicta! Hic ipsam ratione veniam error dignissimos! Nesciunt perferendis accusantium veritatis reprehenderit nobis. Consequatur reiciendis quam repudiandae vel sint, modi magnam rem optio! Sapiente, dignissimos, magni a non praesentium voluptatem fuga tenetur ducimus, nam modi maxime eum doloribus! Consequatur sit quisquam numquam praesentium, aspernatur commodi? Incidunt sequi, numquam vel quibusdam, quo iste aliquam culpa consectetur quas eius ex. Dicta voluptatem eaque tempora, facere aperiam corrupti alias eum provident veniam atque blanditiis cumque. Mollitia similique illo voluptates amet ex atque hic quibusdam! Rerum placeat magni qui nemo nostrum impedit culpa in nam dolore ad quos ipsam similique eum officiis ullam veritatis iure velit aliquam, porro provident deleniti laudantium. Magni minus harum, dicta hic aliquam expedita dolorem numquam omnis suscipit nam error repudiandae reprehenderit dignissimos nemo dolore consequatur fuga similique dolorum voluptas voluptatem provident cum! Consequatur veniam quas labore repellat velit debitis animi, vero inventore! Laudantium voluptatem doloribus perferendis dicta! Natus, repellat aut! Quod at voluptatum ipsum odio iure error deserunt quis perferendis provident rem facilis placeat, sint ratione nihil consequatur in, sunt ipsam. Perferendis pariatur quia modi facilis officiis sit expedita saepe libero illo molestiae eligendi laborum quam, voluptas veniam architecto aperiam consequuntur sunt at minima officia ratione. Ratione quidem, in animi eos architecto consectetur quisquam similique officia. Exercitationem illo sit quas esse doloribus dignissimos dolor qui, quod reiciendis molestiae vero necessitatibus cum praesentium facere maxime dolorum placeat corporis odit ex. Veritatis fuga laudantium minima consequatur! Nemo nulla atque delectus quod neque! Non nam libero fugit, autem magnam, sed nulla cumque ex fugiat aliquam assumenda a perspiciatis quae.  </p></div>
+</div >
+<div class="table_data">
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Raj Kumar</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Raj Kumar</td>
+        </tr>
+        <tr>
+            <th>Name gdgbdffd</th>
+            <td>Raj Kumar</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Raj Kumardfsfdg</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Raj Kumar</td>
+        </tr>
+</table>
+</div>
+<div class="form_data">
+    <form  onsubmit="sendEmail() ;reset(); return false;">
+        <h1>Pitch your Idea by filling the details</h1>
+        <label for="un">Name :</label>
+        <input type="text" id="un" placeholder="USERNAME" maxlength="20" name="firstName" required>
+        <br>
+        <label for="e">Email:</label>
+        <input class="wid" type="email" id="e" placeholder="abc@gmail.com" name="email" required>
+        <br>
+        <!-- <label for="pwd">Password:</label>
+        <input type="password" id="pwd" placeholder="*********" name="password">
+        <br> -->
+        <!-- <label for="cpwd">Confirm Password:</label>
+        <input type="password" id="cpwd" placeholder="CONFIRM" >
+        <br> -->
+        <LAbel for="ph">Moblie Number:</LAbel>
+        <input type="text" id="ph" placeholder="MOBILE" maxlength="10"name="number" required>
+        <br>
+        <label for="tit">Title :</label>
+        <input type="text" id="tit" placeholder="USERNAME" maxlength="20" name="firstName" required>
+        <br>
+        <!-- <label>GENDER:</label>
+        <select name="gender" >
+            <option value="m" >male</option>
+            <option value="f">female</option>
+            <option value="o">others</option>
+        </select> -->
+        <label for="discription">Idea in short discription:</label>
+        <textarea name="" id="discription" cols="20" rows="10"></textarea required>
+        <input type="submit"  value="Submit">
+    </form>
+    <footer>
+        <!-- <div class="footer-container">
+            <div class="footer-left">
+                <h4>Contact Information</h4>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Business St, City, Country</p>
+            </div>
+            <div class="footer-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="twitter-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="instagram-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Business Guide. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+   function sendEmail(){
+       Email.send({
+               Host : "smtp.elasticemail.com",
+               Username : "boinipallyayushgoud@gmail.com",
+               Password : "267B01DFA44549B122BB2DD035B5E23B54B0",
+               To : 'boinipallyayushgoud@gmail.com',
+               From : "boinipallyayushgoud@gmail.com",
+               Subject : "new pitch",
+               Body : "name:"+document.getElementById("un").value+
+                                   "<br>email:"+ document.getElementById("e").value+
+                                   "<br>mobile:" +document.getElementById("ph").value+
+                                   "<br>title:"+ document.getElementById("tit").value+
+                                   "<br> message:"+ document.getElementById("discription").value,
+           }).then(
+           message => alert(message)
+           );
+   }
+</script>
+    <script>
+        // Add JavaScript code to toggle the menu on click
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: powderblue;
+            box-sizing: border-box;
+            /* overflow: auto; */
+        }
+        form{
+          border:2px solid black;
+          width: 40vw;
+          margin: 10% auto;
+          height: 45vh;
+          background-color: aliceblue;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        h1{
+          background-color: orange;
+           width:12vw;
+           margin: 3% auto;
+           text-align: center;
+           font-size: 1.5rem;
+
+        }
+        label,input,textarea{
+
+          background-color: aliceblue;
+          width:20vw;
+          margin: 0.1% auto;
+        }
+        /* input,textarea{
+          width:20vw;
+          margin: 1% auto;
+        } */
+        input[type="submit"]{
+          background-color: coral;
+          border: 2px solid rgb(214, 71, 20);
+          width:10vw;
+          margin: 1% auto;
+        }
+        input[type="submit"]:hover{
+          background-color: rgb(236, 159, 17);
+          border: 2px solid rgb(48, 22, 12);
+        }
+        a{
+          background-color: coral;
+          border: 2px solid rgb(214, 71, 20);
+          width:10vw;
+          margin: 1% auto;
+          text-decoration: none;
+          text-align: center;
+          color:black;
+        }
+        @media only screen and (min-width: 375px)  and (max-width:575px) {
+            h1{
+              width:18vw;
+            }
+            input[type="submit"]{
+          
+          width:13vw;
+          
+        }
+        }
+        @media only screen and (min-width: 277px)  and (max-width:376px) {
+            h1{
+              width:25vw;
+            }
+            input[type="submit"]{
+          
+          width:20vw;
+          
+        }
+        }
+        @media only screen and (max-width:277px) {
+            h1{
+              width:28vw;
+            }
+            input[type="submit"]{
+          
+          width:23vw;
+          
+        }
+        }
+      
+    </style>
+</head>
+<body>
+    <form method="post" action="submit1.php">
+        <h1>Log In</h1>
+        <label for="e">Email:</label>
+        <input class="wid" type="email" id="e"  placeholder="abc@gmail.com" name="email">
+      <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" placeholder="PASSWORD" maxlength="10" name="password">
+      <br>
+        <input type="submit"  value="Sign In">
+        <a href="kamal3.html"> Sign Up</a>
+      </form>
+</body>
+</html>

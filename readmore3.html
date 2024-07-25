@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .mainh1{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            margin: 0px auto;
+        }
+        h1{
+            background-color:aquamarine ;
+            color: coral;
+        }
+        .navbar{
+            /* position: fixed;
+            top: 0px;
+            left: 0; */
+            width: 100%;
+            background-color:aliceblue;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .menu-icon{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li{
+            margin-left: 8%;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+            font-size: 130%;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+        .box{
+            /* border: 2px solid black; */
+            /* height: 45vh; */
+            margin:3.5% 1%;
+            display: flex;
+            flex-wrap: wrap;
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+            /* padding: 2.5%; */
+            /* box-shadow: 20px 20px 20px rgb(188, 172, 172); */
+        }
+        .box img{
+           float: right;
+           /* width: auto; */
+            /* height: 43vh; */
+        }
+        .box p{
+         font-size: 130%;  
+        }
+        ol{
+            padding: 2%;
+        }
+        ol .nam{
+            font-size: 130%;
+        }
+        footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex-basis: 60%;
+}
+
+.footer-right {
+    flex-basis: 30%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
+
+.footer-bottom {
+    background-color:aliceblue;
+    padding: 10px 0;
+}
+        @media(max-width: 768px){
+            .navbar .menu-icon{
+                display: block;
+
+            }
+
+            .navbar ul{
+                display: none;
+                background-color:#7ccfe8;
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                /* background-color: #fff; */
+                padding: 10px;
+                z-index: 100;
+            }
+            ol{
+            padding: 6%;
+        }
+            .navbar ul.show{
+                display: flex;
+            }
+
+            .navbar ul li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .intimg{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">Business Guide</a>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services1.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="kamal.html" class="sign">Sign In</a></li>
+                 <li><a href="kamal3.html" class="sign-2">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainh1"><h1>Innovation and Research - Dr. Reddy's Laboratories:</h1></div>
+    <div class="container">
+        <div class="box">
+    <p>  <img src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZpbmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  class="intimg" alt="he"> Dr. Reddy's Laboratories is a leading Indian pharmaceutical company, established in 1984. The company has been a pioneer in generic drug development and has adopted a strategy of innovation and research to stay competitive in the global pharmaceutical market.Through their innovative approach, Dr. Reddy's Laboratories has earned a reputation as a reliable and quality-driven pharmaceutical company. Their global presence and focus on research have positioned them as a significant player in the global generic pharmaceutical market.The history of the Indian pharma industry started with active pharmaceutical ingredients (APIs). India has been the largest API provider in the world, even bigger than China. Then Indian pharma moved into the generics industry. Today, India is supplying drug products to many countries in the world. We have a large market share in the United States (US), approximately 30% of the volume.
+
+        Process innovation in India brought down AIDS drug costs. We can credit the Indian industry for having given treatment access to AIDS patients. Similarly, in oncology, we have been able to bring down the price of cancer care in many countries. In that sense, India is a dominant force in the API and generic spaces.One aspect of innovation is science and technology– to develop difficult to make, complex generics. The second use of innovation is to drive cost leadership. Even the basic chemistry that we employ today is very old. For example, organic chemistry was based on a classic round-bottom flask where you mix the reagents, heat them or cool them. That process is undergoing dramatic change to micro-reactors, process intensification etc. So, there is a whole array of tools available to the scientist today. But how can these tools improve efficiency? The speed of development is another aspect to consider.
+        <ol type="a">
+        <li class="nam">Research and Development (R&D): Dr. Reddy's Laboratories invests significantly in research and development to create a robust pipeline of generic drugs and biosimilars. R&D efforts focus on developing cost-effective alternatives to patented medications, making healthcare more affordable and accessible.</li>
+        
+        <li class="nam"> Regulatory Expertise: The company has developed strong regulatory expertise to navigate the complex process of drug approvals and comply with international quality standards. This expertise has allowed them to enter and succeed in highly regulated markets worldwide.</li> 
+        
+        <li class="nam"> Global Reach: Dr. Reddy's Laboratories has a strong global presence and exports its products to multiple countries. They have strategic partnerships and distribution networks in various regions, enabling them to reach a broader customer base.</li>
+       <li class="nam">
+        Portfolio Expansion: Apart from generics, Dr. Reddy's has expanded its portfolio to include proprietary and branded products. This diversification helps reduce dependency on a single product category and adds value to their offerings.
+       </li>
+</ol> </p></div>
+</div >
+    <footer>
+        <!-- <div class="footer-container">
+            <div class="footer-left">
+                <h4>Contact Information</h4>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Business St, City, Country</p>
+            </div>
+            <div class="footer-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="twitter-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="instagram-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Business Guide. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Add JavaScript code to toggle the menu on click
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Guide</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* header{
+            background-image: url("https://plus.unsplash.com/premium_photo-1678440680755-2cac9dde515a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+            height: 30vh;
+            opacity: 0.95;
+            background-repeat: no-repeat;
+            background-size:cover;
+        } */
+        header img{
+            width: 100vw;
+            height: 45vh;
+            /* position: relative; */
+            opacity: 0.75;
+            /* z-index: -1; */
+        }
+        /* .navbar{
+         position:absolute;
+         width: 100vw;
+         top:2%;
+         z-index: 1;
+        }
+        .navlist{
+            display: flex;
+            
+        }
+        .navlist li{
+            list-style: none;
+            padding-left:3% ;
+            padding-right: 3%;
+            padding-top: 0.75%;
+            font-size: 120%;
+        }
+        .navlist li a{
+            text-decoration: none;
+            color: black;
+        } */
+        .navbar{
+            /* position: fixed;
+            top: 0px;
+            left: 0; */
+            width: 100%;
+            background-color:aliceblue;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .navbar .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .menu-icon{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li{
+            margin-left: 8%;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 130%;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+
+        /* Add media query for smaller screens */
+        @media(max-width: 768px){
+            .navbar .menu-icon{
+                display: block;
+
+            }
+
+            .navbar ul{
+                display: none;
+                background-color:#7ccfe8;
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                /* background-color: #fff; */
+                padding: 10px;
+                z-index: 100;
+            }
+
+            .navbar ul.show{
+                display: flex;
+            }
+
+            .navbar ul li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+        /* .sign{
+            color:white;
+            text-decoration: none;
+            padding:1%;
+            background-color: black;
+            margin-left: 20%;
+            border: 0.1% solid black;
+            border-radius: 10px;
+            width:3vw;
+            height: 5vh;
+        }
+        .sign-2{
+            color:white;
+            text-decoration: none;
+            padding:1%;
+            background-color: black;
+            margin-left: 5%;
+            border: 0.1% solid black;
+            border-radius: 10px;
+        } */
+        .container{
+            /* display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 95%; */
+            width: 100vw;
+            /* background-color: rgb(194, 194, 244); */
+            padding: 2%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        }
+        h3,h4{
+            text-align: center;
+            font-size: 230%;
+        }
+        .box{
+            /* display: flex;
+            flex-wrap: wrap;  */
+            /* width: 30vw; */
+            box-shadow: 10px 10px 15px rgb(180, 162, 197);
+            /* margin-left: 0.5%;
+            margin-right: 0.5%;
+            margin-top: 0.75%;
+            height: 40vh; */
+            /* flex-wrap: wrap; */
+            margin: 2%;
+            /* border: 2px solid rgb(194, 194, 244); */
+            padding: 2.5%;
+            /* box-shadow: 12px 12px 20px rgb(194, 194, 244), -12px -12px 20px rgb(194, 194, 244); */
+        }
+        .para{
+            font-size: 150%;
+        }
+        .box img{
+            width:20vw;
+            height: 20vh;
+            display: block;
+            margin: auto;
+        }
+        .box a{
+            text-decoration: none;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 8px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+            /* height: 40px; */
+        }
+        /* iframe{
+            width: 100%;
+            height:60vh;
+            margin-top: 2%;
+        } */
+        h4{
+            margin-top: 1.5%;
+        }
+        .box1{
+            /* width: 30vw;
+            box-shadow: 10px 10px 15px rgb(180, 162, 197);
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            height: 40vh; */
+            /* display: flex;
+            flex-wrap: wrap;  */
+            margin: 2%;
+            padding: 2.5%;
+            box-shadow: 10px 10px 15px rgb(180, 162, 197);
+        }
+        .box1 img{
+            width:20vw;
+            height: 20vh;
+            display: block;
+            margin: auto;
+        }
+        .box1 a{
+            text-decoration: none;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 8px;
+            color: white;
+            font-size: 130%;
+        }
+        /* Add styles for the footer */
+footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex-basis: 60%;
+}
+
+.footer-right {
+    flex-basis: 30%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
+
+.footer-bottom {
+    background-color:aliceblue;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <!-- <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Business Guide</a>
+        <div class="menu-icon">&#9776;</div>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="services1.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="kamal.html" class="sign">Sign In</a></li>
+             <li><a href="kamal3.html" class="sign-2">Sign Up</a></li>
+        </ul>
+    </nav>
+    <!-- <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact us</a></li>
+                <a href="kamal.html" class="sign">Sign In</a>
+                <a href="kamal3.html" class="sign-2">Sign Up</a>
+        </ul>
+    </nav> -->
+    <img src="https://images.unsplash.com/photo-1638818834413-c3769cfdd561?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxmaW5hbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+    </header>
+    <main>
+       <h3>Business strategies</h3>
+       <div class="container">
+        
+        <div class="box">
+            <img src="https://plus.unsplash.com/premium_photo-1670213989190-8b29055d8134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGZpbmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <p class="para">The Tata Group is one of India's oldest and largest conglomerates, founded in 1868. Over the years, Tata has expanded its business operations significantly, adopting a strategy of product diversification and global expansion.They have diversified into various industries, including automotive, steel, information technology, telecommunications, consumer goods, hospitality, and more. </p>
+            <a href="readmore1.html">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpbmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <p class="para">IndiGo Airlines, founded in 2006, is one of India's leading budget airlines and a prominent player in the domestic aviation market. The airline has successfully implemented a low-cost business model, which has contributed to its growth and profitability. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A repellat nesciunt cupiditate ipsam debitis cumque!</p>
+            <a href="readmore2.html" >Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZpbmFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <p class="para">Dr. Reddy's Laboratories is a leading Indian pharmaceutical company, established in 1984. The company has been a pioneer in generic drug development and has adopted a strategy of innovation and research to stay competitive in the global pharmaceutical market. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam.
+
+                Key Elements of Dr. Reddy's Laboratories' Innovation Strategy:</p>
+            <a href="readmore3.html">Read More</a>
+        </div>
+       </div>
+       <!-- TradingView Widget BEGIN -->
+       <div>
+        <h4>Live stock updates</h4>
+<div class="tradingview-widget-container" id="stocks">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets</span></a> on TradingView</div>
+   
+  </div>
+</div>
+  <!-- TradingView Widget END -->
+     
+    </main>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+        {
+        "colorTheme": "light",
+        "dateRange": "12M",
+        "exchange": "BSE",
+        "showChart": true,
+        "locale": "in",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": false,
+        "showFloatingTooltip": false,
+        "width": "100%",
+        "height": "600",
+        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+        "gridLineColor": "rgba(240, 243, 250, 0)",
+        "scaleFontColor": "rgba(106, 109, 120, 1)",
+        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+        "symbolActiveColor":"rgba(41, 98, 255, 0.12)"
+      }
+        </script>
+        <h3>Meet the investors for your Business</h3>
+        <div class="container">
+         <div class="box1">
+             <img src="https://media.istockphoto.com/id/1369199737/photo/portrait-of-a-handsome-young-businessman-working-in-office.jpg?s=612x612&w=0&k=20&c=ctxvuvJJZS2euXBGQazRd1W81dXZCJXgW11i2jZnNMI="  class="intimg" alt="he">
+             <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laudantium commodi accusantium rem ipsa corporis sit alias ipsum, ab voluptatem. Ducimus mollitia, incidunt molestiae quod officiis perspiciatis similique delectus laboriosam!</p>
+             <a href="pitch1.html">Pitch Now</a>
+         </div>
+         <div class="box1">
+             <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?b=1&s=170667a&w=0&k=20&c=lrHSjzuqKIAC76-vpOhzR7pRsP38DGPWt7x7SOFbm0Q=" class="intimg" alt="">
+             <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laudantium commodi accusantium rem ipsa corporis sit alias ipsum, ab voluptatem. Ducimus mollitia, incidunt molestiae quod officiis perspiciatis similique delectus laboriosam!</p>
+             <a href="pitch2.html">Pitch Now</a>
+         </div>
+         <div class="box1">
+             <img src="https://media.istockphoto.com/id/1367324477/photo/mature-businessman-over-white-background-stock-photo.jpg?s=612x612&w=0&k=20&c=sZwrMqZnoYlI6KupuuUL_uKv-r1_6xWRBClKevrxgNU=" class="intimg" alt="">
+             <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laudantium commodi accusantium rem ipsa corporis sit alias ipsum, ab voluptatem. Ducimus mollitia, incidunt molestiae quod officiis perspiciatis similique delectus laboriosam!</p>
+             <a href="pitch3.html">Pitch Now</a>
+         </div>
+        </div>
+        <footer>
+            <!-- <div class="footer-container">
+                <div class="footer-left">
+                    <h4>Contact Information</h4>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Business St, City, Country</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#" class="twitter-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#" class="instagram-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 Business Guide. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <script>
+            // Add JavaScript code to toggle the menu on click
+            const menuIcon = document.querySelector('.menu-icon');
+            const navList = document.querySelector('.navlist');
+    
+            menuIcon.addEventListener('click', () => {
+                navList.classList.toggle('show');
+            });
+        </script>
+</body>
+</html>
